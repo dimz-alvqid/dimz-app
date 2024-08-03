@@ -9,14 +9,9 @@ export default function Page() {
        </tr>
       </thead>
       <tbody>
-        {linkData.map((list) => {
-          return (
-             <tr>
-               <td>{list.name}</td>
-             </tr>
-           )
-         })
-        }
+        <tr>
+          <td>Use NextJS</td>
+        </tr>
        </tbody>
       </table>
      </div>
