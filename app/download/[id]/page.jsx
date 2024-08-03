@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import { useParams } from 'next/navigation';
 import data from '../data.js';
 
 export default function Page() {
-  const router = useRouter();
-  const { id } = router.query;
+  const params = useParams()
+  const { id } = params;
   
   const containerData = data.find((item) => item.id === id);
 
