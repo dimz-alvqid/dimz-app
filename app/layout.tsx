@@ -21,8 +21,8 @@ export default function RootLayout({
     <html lang="en">
       <SSRProvider>
         <Navigation />
-        <body className={inter.className}>{children}</body>
       </SSRProvider>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
