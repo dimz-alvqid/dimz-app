@@ -10,14 +10,13 @@ export default function Page() {
   const foundItem = linkData.find((item) => item.id === id);
   const [item, setItem] = useState(null);
   const [showAlternative, setShowAlternative] = useState(false);
-  
-  if(!foundItem) {
-    return <div>Addon Not Found!</div>
-  }
-  
-  if(foundItem && !item) {
-    setItem(foundItem)
-  }
+
+  useEffect(() => {
+    if (id) {
+      const foundItem = linkData.find((item) => item.id === id);
+      setItem(foundItem);
+    }
+  }, [id]);
   
   if (!item) return <div>Loading...</div>;
 
