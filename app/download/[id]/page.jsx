@@ -3,7 +3,7 @@ import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import linkData from '../link.js';
 
-export default function DownloadPage() {
+export default function Page() {
   const params = useParams();
   const { id } = params;
 
