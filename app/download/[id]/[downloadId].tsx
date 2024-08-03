@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import data from './_downloadLink.json';
+import data from '/app/_downloadLink.json';
 
 export default function DownloadPage() {
   const router = useRouter();
