@@ -1,13 +1,9 @@
-import { Table } from 'react-bootstrap';
-import SSRProvider from 'react-bootstrap/SSRProvider';
 import React from 'react';
 import linkData from './link.js';
 
 export default function Page() {
   return (
-    <SSRProvider>
-   <div>
-    <Table>
+   <div class="table">
       <thead>
         <tr>
           <th>NAME</th>
@@ -23,8 +19,6 @@ export default function Page() {
         })
         }
       </tbody>
-    </Table>
-  </div>
-      </SSRProvider>
+   </div>
   );
 }
