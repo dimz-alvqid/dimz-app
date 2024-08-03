@@ -1,0 +1,15 @@
+[
+  {
+    "name": "advanced container",
+    "id": "advanced-container",
+    "showcaselink": "https://youtube.com/...",
+
+    "shortenerlink": "https://linkvertise.com/",
+    "altenativelink": "https://lootlabs.com/",
+    "hidealternativelink": true,
+
+    "downloadid": "1234",
+    "targetlink": "https://dimzproject.my.id/",
+    "redirectlink": "https://youtube.com/"
+  }
+]
