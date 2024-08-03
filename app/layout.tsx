@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigation from '../lib/navigation';
 
 export const metadata: Metadata = {
   title: "Dimz Project",
@@ -15,7 +13,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navigation />
         <main>{children}</main>
       </body>
     </html>
