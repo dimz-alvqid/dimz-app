@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from '../lib/navigation';
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Dimz Project",
@@ -19,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Navigation />
-      <body className={inter.className}>{children}</body>
+      <body><main>{children}</main></body>
     </html>
   );
 }
