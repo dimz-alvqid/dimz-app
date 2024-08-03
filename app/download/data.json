@@ -1,4 +1,4 @@
-const data = [
+[
   {
     "name": "advanced container",
     "id": "advanced-container",
@@ -9,6 +9,4 @@ const data = [
     "targetlink": "https://raw.githubusercontent.com/yourusername/yourrepo/main/yourfile.zip",
     "redirectlink": "https://youtube.com/..."
   }
-];
-
-export default data;
+]
