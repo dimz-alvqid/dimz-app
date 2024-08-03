@@ -1,12 +1,22 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
-import data from '../data.js';
 
 export default function Page() {
+  async function getData() {
+    const [data, setData] = useState(null);
+    
+    useEffect(() => {
+      const res = await fetch('../data.json').then((res) => res.json());
+      setData(res)
+    }, []);
+    
+    return data;
+  }
+  
   const params = useParams()
   const { id } = params;
-  
-  const containerData = data.find((item) => item.id === id);
+  const item = getData();
+  const containerData = item.find((item) => item.id === id);
 
   useEffect(() => {
     if (containerData) {
