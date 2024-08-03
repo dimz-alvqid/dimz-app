@@ -1,15 +1,15 @@
 [
   {
-    "name": "advanced container",
+    "name": "Advanced Container",
     "id": "advanced-container",
-    "showcaselink": "https://youtube.com/...",
-
-    "shortenerlink": "https://linkvertise.com/",
-    "altenativelink": "https://lootlabs.com/",
+    "showcaselink": "https://youtube.com/embed/YOUR_VIDEO_ID",
+    
+    "shortenerlink": "https://linkvertise.com/...",
+    "altenativelink": "https://lootlabs.com/...",
     "hidealternativelink": true,
-
-    "downloadid": "1234",
-    "targetlink": "https://dimzproject.my.id/",
-    "redirectlink": "https://youtube.com/"
+    
+    "downloadid": "di-br82bdi",
+    "targetlink": "https://dimzproject.my.id/download/...",
+    "redirectlink": "https://youtube.com/..."
   }
 ]
