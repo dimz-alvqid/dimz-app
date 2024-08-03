@@ -1,4 +1,4 @@
-[
+const data = [
   {
     "name": "Advanced Container",
     "id": "advanced-container",
@@ -19,4 +19,6 @@
     "targetlink": "https://dimzproject.my.id/download/...",
     "redirectlink": "https://example.com/"
   }
-]
+];
+
+export default data;
