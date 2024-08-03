@@ -1,4 +1,4 @@
-[
+const linkData = [
   {
     "name": "Advanced Container",
     "id": "advanced-container",
@@ -12,4 +12,6 @@
     "targetlink": "https://dimzproject.my.id/download/...",
     "redirectlink": "https://youtube.com/..."
   }
-]
+];
+
+export default linkData;
