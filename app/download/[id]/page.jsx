@@ -1,12 +1,13 @@
-import { useRouter } from 'next/router';
+"use client";
+import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import linkData from '../link.json';
+import linkData from '../link.js';
 
 export default function DownloadPage() {
-  const router = useRouter();
-  const { id } = router.query;
+  const params = useParams();
+  const { id } = params;
 
-  const [item, setItem] = useState<any>(null);
+  const [item, setItem] = useState(null);
   const [showAlternative, setShowAlternative] = useState(false);
 
   useEffect(() => {
