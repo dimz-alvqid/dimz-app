@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import data from './data';
 
-function AddonPage() {
+function Addon() {
   const router = useRouter();
   const { addon } = router.query;
   const item = data.find((item) => item.id === addon[0]);
@@ -29,4 +29,4 @@ function AddonPage() {
   );
 };
 
-export default AddonPage;
+export default Addon;
