@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import FetchApi from './api';
 
-const AddonPage = () => {
+async function AddonPage() {
   const router = useRouter();
   const { addon } = router.query;
   
