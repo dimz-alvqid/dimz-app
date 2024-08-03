@@ -2,10 +2,12 @@
 import { Navbar, Container, Nav, Card, Col, Row } from 'react-bootstrap';
 import Link from 'next/link';
 import React from 'react';
+import SSRProvider from 'react-bootstrap/SSRProvider';
 
 function Navigation() {
   return (
     <div>
+      <SSRProvider>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
           <Navbar.Brand to="/">Dimz Project.</Navbar.Brand>
@@ -20,6 +22,7 @@ function Navigation() {
             </Navbar.Collapse>
         </Container>
       </Navbar>
+        </SSRProvider>
       </div>
   );
 }
