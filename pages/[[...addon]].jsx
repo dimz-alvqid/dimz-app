@@ -1,11 +1,9 @@
 import { useRouter } from 'next/router';
-import FetchApi from './api';
+import data from './data';
 
-async function AddonPage() {
+function AddonPage() {
   const router = useRouter();
   const { addon } = router.query;
-  
-  const data = await FetchApi('./data.json');
   const item = data.find((item) => item.id === addon[0]);
 
   const handleDownload = (link) => {
