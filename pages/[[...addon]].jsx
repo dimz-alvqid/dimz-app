@@ -3,10 +3,10 @@ import FetchApi from './api';
 
 const AddonPage = () => {
   const router = useRouter();
-  const { id } = router.query;
+  const { addon } = router.query;
   
   const data = await FetchApi('./data.json');
-  const item = data.find((item) => item.id === id[0]);
+  const item = data.find((item) => item.id === addon[0]);
 
   const handleDownload = (link) => {
     document.location = link;
