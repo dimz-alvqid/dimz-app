@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import data from './data.json';
-import { ContainerData } from '../types';
+import { ContainerData } from './types';
 
 const typedData: ContainerData[] = data as ContainerData[];
 
