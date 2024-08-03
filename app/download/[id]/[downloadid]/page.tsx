@@ -1,10 +1,11 @@
-import { useRouter } from 'next/navigation';
+"use client";
+import { useParams } from 'next/navigation';
 import { useEffect } from 'react';
-import linkData from '../../link.json';
+import linkData from '../../link.js';
 
 export default function RedirectPage() {
-  const router = useRouter();
-  const { id, downloadid } = router.query;
+  const router = useParams();
+  const { id, downloadid } = router;
 
   useEffect(() => {
     if (id && downloadid) {
