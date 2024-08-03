@@ -1,14 +1,11 @@
 import { useRouter } from 'next/router';
-import data from './data.json';
-import { ContainerData } from './types';
+import data from './data.js';
 
-const typedData: ContainerData[] = data as ContainerData[];
-
-export default function ContainerPage() {
+export default function Page() {
   const router = useRouter();
   const { id } = router.query;
   
-  const containerData = typedData.find((item) => item.id === id);
+  const containerData = data.find((item) => item.id === id);
 
   if (!containerData) {
     return <p>Container not found.</p>;
