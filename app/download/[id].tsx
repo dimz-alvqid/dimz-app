@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import data from './data';
+import data from './download/data.js';
 
 export default function ContainerPage() {
   const router = useRouter();
