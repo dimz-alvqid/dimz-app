@@ -1,4 +1,4 @@
-const data = [
+[
   {
     "name": "Advanced Container mcpe",
     "id": "advanced-container",
@@ -20,5 +20,3 @@ const data = [
     "redirectlink": "https://example.com/"
   }
 ];
-
-export default data;
