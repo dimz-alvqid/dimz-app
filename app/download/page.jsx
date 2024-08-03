@@ -9,9 +9,14 @@ export default function Page() {
        </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Use NextJS</td>
-        </tr>
+        {linkData.map((array) => {
+          return (
+           <tr>
+             <td><a href={`/${array.id}`}>{array.name}</a></td>
+           </tr>
+          )
+        })
+        }
        </tbody>
       </table>
      </div>
