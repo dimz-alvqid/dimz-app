@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import data from '../_downloadLink.json'; // test
+import data from 'app/download/data.json'; // test
 
 export default function ContainerPage() {
   const router = useRouter();
