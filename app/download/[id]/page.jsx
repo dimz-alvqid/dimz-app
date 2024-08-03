@@ -13,7 +13,9 @@ export default function Page() {
   
   if(!foundItem) {
     return <div>Addon Not Found!</div>
-  } else {
+  }
+  
+  if(foundItem && !item) {
     setItem(foundItem)
   }
   
