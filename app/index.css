@@ -42,7 +42,7 @@ html {
 body {
   font-family: Minecraft;
   min-height: 100%;
-  color: white;
+  color: black;
   background-color: lightgray !important;
   margin: 0;
   font-family: Minecraft;
@@ -819,7 +819,7 @@ button {
 }
 
 body {
-  color: #fff;
+  color: black;
   background-color: #222;
   font-family: Open-Sans;
   font-size: 14px;
