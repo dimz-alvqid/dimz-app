@@ -1,7 +1,8 @@
 "use client";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import linkData from '../link.js';
+import linkData from '@/data/link';
 
 export default function Page() {
   const params = useParams();
@@ -12,13 +13,13 @@ export default function Page() {
   const foundItem = linkData.find((item) => item.id === id);
 
   useEffect(() => {
-    if (id) {
+    if (id && foundItem) {
       setItem(foundItem);
     }
   }, [foundItem]);
   
-  if (!item) return <div>Loading...</div>;
   if(!foundItem) return <div>Addon Not Found!</div>;
+  if (!item) return <div>Loading...</div>;
 
   return (
     <div style={{ padding: '20px' }}>
