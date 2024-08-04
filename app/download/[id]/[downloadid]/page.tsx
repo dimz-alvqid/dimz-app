@@ -1,7 +1,7 @@
 "use client";
 import { useParams } from 'next/navigation';
 import { useEffect } from 'react';
-import linkData from '../../link.js';
+import linkData from '@/data/link';
 
 export default function RedirectPage() {
   const router = useParams();
@@ -16,6 +16,8 @@ export default function RedirectPage() {
         setTimeout(() => {
           window.location.href = foundItem.redirectlink;
         }, 1000); // Delay to allow the first redirect to happen
+      } else {
+        return <div>Eror! Please Report to dimzCraft</div>;
       }
     }
   }, [id, downloadid]);
