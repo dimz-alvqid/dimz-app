@@ -3,7 +3,8 @@
   font-display: swap;
   src: url(./Minecraft.ttf) format('truetype');
   font-weight: 800;
-  font-style: normal
+  font-style: normal;
+  color: white;
 }
 
 html {
@@ -43,7 +44,7 @@ body {
   font-family: Minecraft;
   min-height: 100%;
   color: black;
-  background-color: lightgray !important;
+  background-color: white !important;
   margin: 0;
   font-family: Minecraft;
   font-size: 14px;
