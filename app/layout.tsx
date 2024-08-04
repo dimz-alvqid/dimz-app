@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css";
 
 export const metadata: Metadata = {
   title: "Dimz Project",
