@@ -7,7 +7,6 @@ export default function Page() {
   const params = useParams();
   const { id } = params;
   
-  const foundItem = linkData.find((item) => item.id === id);
   const [item, setItem] = useState(null);
   const [showAlternative, setShowAlternative] = useState(false);
   const foundItem = linkData.find((item) => item.id === id);
